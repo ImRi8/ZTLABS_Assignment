@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Planning Tool MVP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="floating-container">
+    <div class="input-container address-input-container">
+      <input type="text" id="addressInput" placeholder="Enter address">
+      <button onclick="addAddress()">Add Address</button>
+    </div>
+    <div class="input-container technician-input-container">
+      <input type="text" id="technicianInput" placeholder="Enter technician's location">
+      <button onclick="addTechnicianLocation()">Add Technician Location</button>
+    </div>
+    <div class="input-container">
+      <button class="plan-route" onclick="planRoute()">Plan Route</button>
+      <button class="mark-completed-button" onclick="markJobCompleted()">Mark Job Completed</button>
+    </div>
+  </div>
+
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3FqeaNMevABlI83EbJodYxsnmpoxi1Ls&callback=initMap&libraries=places,geometry&csp_test=true""></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
