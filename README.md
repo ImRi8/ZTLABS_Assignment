@@ -4,3 +4,5 @@
 ### 3.`npm i`
 ### 4.`node server.js`
 ### 5. Open index.js in your browser
+
+### Frontend is being deployed to the GitHub pages.
